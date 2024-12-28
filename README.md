@@ -8,15 +8,15 @@ Link [Here](https://discover-imdbs-top-movies.onrender.com/).
 
 ## Features
 
-**Simple User Interface**: Displays a list of movies with title, year, and rating. Responsive design that works well on both desktop and mobile devices.
-**Dynamic Search**: A search functionality to filter movies by title, search, the app filters data and displays matching movies.
-**Simple User Interface**: Displays a list of movies with title, year, and rating. Responsive design that works well on both desktop and mobile devices.
+- **Simple User Interface**: Displays a list of movies with title, year, and rating. Responsive design that works well on both desktop and mobile devices.
+- **Dynamic Search**: A search functionality to filter movies by title, search, the app filters data and displays matching movies.
+- **Simple User Interface**: Displays a list of movies with title, year, and rating. Responsive design that works well on both desktop and mobile devices.
 
 
 ## Tech Stack
 
-**Backend**: Flask (Python web framework for web app), Python(requests and BeautifulSoup libraries for scraping)
-**Frontend**: HTML, CSS
-**Data**: pandas, csv (to handle the movie dataset)
-**Deployment**: Render (for deploying the app)
+- **Backend**: Flask (Python web framework for web app), Python(requests and BeautifulSoup libraries for scraping)
+- **Frontend**: HTML, CSS
+- **Data**: pandas, csv (to handle the movie dataset)
+- **Deployment**: Render (for deploying the app)
 
