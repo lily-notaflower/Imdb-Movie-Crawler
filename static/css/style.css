@@ -80,8 +80,12 @@ tr:hover{
 /*Responsive Design*/
 
 @media(max-width:768px){
-    table, th, td{
-        display: block;
-        width: 100%;
+    table{
+        display: table;
+        overflow-x: auto;
+        width: 95%;
+    }
+    td, th{
+        display: table-cell;
     }
 }
