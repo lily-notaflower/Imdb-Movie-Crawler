@@ -1,9 +1,11 @@
 from flask import Flask, render_template, request
 import pandas as pd
+import os
 
 app = Flask(__name__)
 
-df = pd.read_csv('data/movies.csv')
+DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'movies.csv')
+df = pd.read_csv(DATA_PATH)
 
 @app.route('/')
 def home():
@@ -16,4 +18,5 @@ def search():
     return render_template('home.html', movies = filtered_movies.to_dict(orient='records'))
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000, debug=False)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host='0.0.0.0', port=port)
