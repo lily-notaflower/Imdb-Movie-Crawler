@@ -1,0 +1,87 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(3, 44, 44);
+    color: beige;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 40px;
+}
+
+form{
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"]{
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+button[type="submit"]{
+    padding: 10px 15px;
+    background-color: white;
+    color:darkslategray;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+button[type="submit"]:hover{
+    background-color: rgb(200, 200, 200);
+    color: black;
+}
+
+table{
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: darkslategray;
+    color: beige;
+}
+
+td{
+    padding: 12px;
+    text-align: left;
+    border: 1px solid white;
+    color: whitesmoke;
+    font-size: 17px;
+}
+th{
+    text-align: left;
+    padding: 15px;
+    border: 2px solid white;
+    font-size: 20px;
+    background-color: rgb(25, 55, 55);
+}
+tr:nth-child(even){
+    background-color: rgb(29, 63, 63);
+}
+tr:hover{
+    background-color: rgb(33, 76, 76);
+}
+
+/*Responsive Design*/
+
+@media(max-width:768px){
+    table, th, td{
+        display: block;
+        width: 100%;
+    }
+}
